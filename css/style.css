@@ -1,0 +1,316 @@
+/* 31 set a font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* 5 when our web is repo them set this */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* 6 first set a nav bar target nav  */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;    /*when we give top 0 then it will stick*/
+    cursor: pointer;
+   
+}
+/* 7 set navbar at center  and horizontal text*/
+.nav-list{
+    width:70%;
+    /* background-color:  is to understand how much space it taking; */
+    /* background-color: black;  */
+    display: flex;                    /*straight line*/
+   text-align: center;
+
+}
+/* 8 li padding */
+.nav-list li{ 
+    padding: 26px 30px;        /* distance between text  */
+    list-style: none;   
+
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;  
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+/* 11 when we hover (psudo) */
+.nav-list li a:hover{
+    color: grey;
+   
+
+}
+
+.rightnav{
+    /* background-color: blueviolet; */
+    text-align: right;
+    width:30%;
+     
+}
+/* 9 logo height and img */
+.logo img{
+    width: 26%;    /*size */
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border: 3px  solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+/* 10l ogo placement */
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 12 set a search then set a baclground so add id in navbar */
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+/* 14 add background img in navbar*/
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;    /*it will blend the background image in  navbar*/
+
+ }
+ /* 19  */
+ .box-main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     max-width: 50%;
+     margin: auto;  /*get all in center after adding max-width*/
+     height: 80%;
+ }
+ /* 20 vh view port it will increase the height  */
+ .firstSection{
+     height: 100vh;
+ }
+ /* 21 then target the first and second half */
+ .firstHalf{
+     width:80% ;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+ }
+ .secondHalf{
+     width: 30%;
+
+ }
+
+ /* 22  then set image in second half  */
+ .secondHalf img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    /* to make the box in center in secondalgf */
+    display: block;
+    margin: auto;
+
+}
+
+/* 23 then set a design to button */
+.text-big{
+    font-size: 35px;
+
+}
+.text-small{
+       font-size: 15px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;/*make transparant*/
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+/* 24 set a sm button search */
+.btn-sm{
+    padding:4px 10px;
+    vertical-align:middle;  /*come button in center*/
+    font-size: 16px;
+}
+
+/* 27 set the secRight text */
+/* .secRight{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    max-width:80%;
+    margin: auto;
+    justify-content: space-evenly;
+}we are repeating same thing in secleft so we make a section
+principle of html css is dry principal do not repeat ur self */
+
+.section{
+    /* height: 400px; */
+    /* bcoz we are given a height hardcore so repo is facing the problem if we remove height then it will take all img and para in column */
+    display: flex;
+    align-items: center;
+    max-width:80%;
+    margin: auto;
+    justify-content: space-evenly;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+.thumbnail img{
+    
+    width:250px;
+    border: 2px solid black;
+    border-radius: 25px;
+   margin-top: 19px;
+}
+/* 28  padding for para */
+.paras{
+    padding: 0px 65px;
+}
+ /* 30 secLeft */
+.section-left{
+
+    /* now we want to move a right image to left so use row reverse */
+    flex-direction: row-reverse;
+}
+/* 32 then make a para font style */
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sectionTag{
+    padding:16px 0px;
+}
+/* 34 contact bg */
+.contact{
+    background-color:#f6f5f4;
+    height:833px;
+   
+}
+/* 35 make a class of text-center */
+.text-center{
+    text-align: center;
+    padding-top:10px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+/*37 when we give a max-width the label of input is not in proper center so we give a wodth to input */
+.form-input{
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin: 13px 0px;
+    padding: 5px 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* 39 button  */
+.btn-dark{
+    color: black;
+    border:2px solid gray   ;
+}
+.footer{
+    background-color: black;
+    padding: 15px 0px;
+    color: grey;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+ /* 43 make a burger css */
+ .burger{
+     position:absolute;
+     cursor: pointer;
+     right: 5%;
+     top:15px;
+     display: none;  /*we will make a burger block in media query*/
+
+ }
+ .line{
+     width: 33px;
+     background-color:white;
+     height: 4px;
+     margin: 5px 3px;
+ }
+
+
+  /* 41 repositery */
+
+@media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+         /* height for repo */
+          height:442px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    /* 45 nav resp  next in js*/
+     .h-nav-resp{
+         /* bydefault height  */
+        height: 72px;
+    }
+    .v-class-resp{
+        /* the opacity:0; is used to invisible the nav list when it repo  and 
+        set id to  nav ulNote:v is for visible or in visible */
+        opacity: 0;
+    }
+    /* 47 box main  the watch suscribe a\part */
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    /* 48 section reverse  box image will come in straight line*/
+    .section{
+        flex-direction: column-reverse;
+    }
+    /* 49 teh section of watch subscribe is not their in center while repo */
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px 0px;
+    }
+}
+

@@ -1,0 +1,56 @@
+ /* 41 repositery */
+
+ @media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+         /* height for repo */
+          height:442px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    /* 45 nav resp  next in js*/
+     .h-nav-resp{
+         /* bydefault height  */
+        height: 72px;
+    }
+    .v-class-resp{
+        /* the opacity:0; is used to invisible the nav list when it repo  and 
+        set id to  nav ulNote:v is for visible or in visible */
+        opacity: 0;
+    }
+    /* 47 box main  the watch suscribe a\part */
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    /* 48 section reverse  box image will come in straight line*/
+    .section{
+        flex-direction: column-reverse;
+    }
+    /* 49 teh section of watch subscribe is not their in center while repo */
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px 0px;
+    }
+}
+
